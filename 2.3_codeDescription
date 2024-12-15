@@ -1,6 +1,0 @@
-led = machine.PWM(machine.Pin(15)) sets the GP15 pin as PWM output.
-The line led.freq(1000) is used to set the PWM frequency, here it is set to 1000Hz, which means 1ms (1/1000) is a cycle.
-The led.duty_u16() line is used to set the duty cycle, which is a 16-bit interger(2^16=65536). A 0 indicates 0% duty cycle, which means each cycle has 0% time to output a high level, i.e., all pulses are turned off. The value 65535 indicates a duty cycle of 100%, which means the whole pulse is turned on, and the result is ‘1’. When it is 32768, it will turn on half a pulse, so the LED will be half as bright when fully on.
-
-
-
